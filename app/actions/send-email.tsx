@@ -13,7 +13,7 @@ export async function sendContactEmail(formData: {
 }) {
   try {
     const { data, error } = await resend.emails.send({
-      from: "YouthX Technologies <onboarding@resend.dev>", // This will be replaced with your verified domain
+      from: "YouthX Technologies <onboarding@resend.dev>", // Replace with your verified domain
       to: ["youthxtechnologies@gmail.com"],
       replyTo: formData.email,
       subject: `New Contact Form Submission from ${formData.name}`,
